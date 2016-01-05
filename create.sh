@@ -6,7 +6,7 @@ do
   npm install
   grunt build
   mkdir -p /var/www/html/$i/resources
-  for f in ./target/*; do echo $f; cp $f/resources/* -R /var/www/html/resources/$i; done
+  for f in ./target/*; do echo $f; cp $f/resources/* -R /var/www/html/$i/resources/; done
   # clean up src and target
   rm -R ./target/*
   rmdir ./target

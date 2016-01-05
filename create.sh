@@ -4,7 +4,7 @@ do
   echo $i;
   git checkout $i
   npm install
-  grunt build
+  grunt build --production
   mkdir -p /var/www/html/$i/resources
   for f in ./target/*; do echo $f; cp $f/resources/* -R /var/www/html/$i/resources/; done
   # clean up src and target

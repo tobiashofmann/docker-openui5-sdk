@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in $(git tag -l "1.32.*");
+for i in $(git tag -l "1.32.5");
 do
   echo $i;
   git checkout $i

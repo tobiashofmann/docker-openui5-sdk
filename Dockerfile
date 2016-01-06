@@ -10,7 +10,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 # download openui5 sdk
 RUN wget https://openui5.hana.ondemand.com/downloads/openui5-sdk-1.32.9.zip -P /var/www/html
-# unzip into {version} directory
+# unzip into apache www root directory
 RUN unzip -o /var/www/html/openui5-sdk-1.32.9.zip -d /var/www/html/
 RUN rm /var/www/html/openui5-sdk-1.32.9.zip
 EXPOSE 80

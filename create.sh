@@ -11,3 +11,4 @@ do
   rm -R ./target/*
   rmdir ./target
 done
+rm -R *

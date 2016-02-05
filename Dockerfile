@@ -9,9 +9,9 @@ RUN apt-get update \
   && apt-get clean \ 
   && rm -rf /var/lib/apt/lists/*
 # download openui5 sdk
-RUN wget https://openui5.hana.ondemand.com/downloads/openui5-sdk-1.32.10.zip -P /var/www/html
+RUN wget https://openui5.hana.ondemand.com/downloads/openui5-sdk-1.32.11.zip -P /var/www/html
 # unzip into apache www root directory
-RUN unzip -o /var/www/html/openui5-sdk-1.32.10.zip -d /var/www/html/
-RUN rm /var/www/html/openui5-sdk-1.32.10.zip
+RUN unzip -o /var/www/html/openui5-sdk-1.32.11.zip -d /var/www/html/
+RUN rm /var/www/html/openui5-sdk-1.32.11.zip
 EXPOSE 80
 ENTRYPOINT /usr/sbin/apache2ctl -D FOREGROUND
